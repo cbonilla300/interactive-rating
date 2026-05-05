@@ -1,54 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div id="container">
+      <img src="images/icon-star.svg" alt="icon-star" />
+      <h1>How did we do?</h1>
 
-  <!-- Rating state start -->
-  <img src="images/icon-star.svg" alt="icon-star" >
-  <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="ratings">
+        <span><button>1</button></span>
+        <span><button>2</button></span>
+        <span><button>3</button></span>
+        <span><button>4</button></span>
+        <span><button>5</button></span>
+      </div>
 
-  <p>Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!</p>
+      <button type="submit">Submit</button>
 
-  <span><button>1</button></span> 
-  <span><button>2</button></span>
-  <span><button>3</button></span>
-  <span><button>4</button></span>
-  <span><button>5</button></span>
+      <!-- Rating state end -->
 
-  <button type="submit">Submit</button>
+      <!-- Thank you state start -->
 
-  <!-- Rating state end -->
+      <p class="hidden">
+        You selected
+        <!-- Add rating here -->
+        out of 5
+      </p>
 
-  <!-- Thank you state start -->
+      <h2 class="hidden">Thank you!</h2>
 
-  <p>You selected <!-- Add rating here --> out of 5</p>
+      <p class="hidden">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
 
-  <h2>Thank you!</h2>
-
-  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!</p>
-
-  <!-- Thank you state end -->
-
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-  <script src="script.js"></script>
-</body>
+      <!-- Thank you state end -->
+    </div>
+    <footer class="attribution" style="color: white;">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" style="color: white;">Frontend Mentor</a>.
+      Coded by <a href="#" style="color: white;">Cesar Bonilla</a>.
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
