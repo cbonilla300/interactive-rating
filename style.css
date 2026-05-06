@@ -17,13 +17,11 @@ body {
     gap: 1.2rem 0 ;
 }
 
-.hidden {
-    display: none;
-}
+
 
 #container {
     background-color: hsl(213, 19%, 18%);
-    max-width: 400px;
+    max-width: 410px;
     padding: 2rem 1.5rem .5rem 1.5rem;
     border-radius: 20px;
     display: flex;
@@ -78,6 +76,7 @@ body {
         letter-spacing: 2px;
         text-transform: uppercase;
         color: black;
+        width: 100%;
     }
     button[type = "submit"]:active {
         background-color: white;
@@ -88,7 +87,36 @@ body {
 
 }
 
+#container-thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 80px;
+        
+        
+    }
+    .selection {
+        border: 1px solid;
+        padding: .1rem 1.5rem;
+        color: hsl(25, 97%, 53%);
+        border-radius: 10px ;
+        margin: 20px 0 40px 0;
+    }
+
+    h2 {
+        color: white;
+    }
+    p {
+        text-align: center;
+        
+    }
+  
+}
 
 
-
-
+.hidden {
+    display: none!important;
+}
